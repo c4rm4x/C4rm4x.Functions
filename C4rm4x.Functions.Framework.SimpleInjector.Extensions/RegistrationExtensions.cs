@@ -28,7 +28,7 @@ namespace C4rm4x.Functions.Framework.SimpleInjector
 
             foreach (var registration in registrations)
                 foreach (var service in registration.Services)
-                    container.Register(service, registration.Implementation, Lifestyle.Transient);
+                    container.Register(service, registration.Implementation, Lifestyle.Scoped);
         }
 
         /// <summary>
